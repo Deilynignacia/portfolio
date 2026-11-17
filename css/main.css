@@ -365,3 +365,176 @@ footer p {
   font-size: 0.75rem;
   letter-spacing: 1px;
 }
+
+/* WORK CARDS */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.work-card {
+  min-height: 280px;
+  padding: 40px 30px;
+  background: var(--light-blue);
+  border: 2px solid var(--black);
+  box-shadow: 7px 7px 0 var(--pink);
+  transition: transform 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-8px) rotate(-2deg);
+}
+
+.work-card:nth-child(2) {
+  background: #ffe2ed;
+}
+
+.work-card:nth-child(3) {
+  background: var(--cream);
+}
+
+.work-icon {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: var(--hot-pink);
+}
+
+.work-card h3 {
+  margin-bottom: 15px;
+  font: 700 1.8rem "Archivo Black", sans-serif;
+}
+
+.work-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.work-link {
+  display: inline-block;
+  margin-top: 25px;
+  font: 700 1.5rem "Caveat", cursive;
+}
+
+/* GRAPHIC DESIGN PAGE */
+.graphic-design {
+  min-height: 100vh;
+  padding: 160px 10% 100px;
+  background: var(--cream);
+}
+.graphic-design > h1 {
+  margin-bottom: 25px;
+  font: 700 clamp(4rem, 7vw, 8rem)
+    "Archivo Black", sans-serif;
+  line-height: 1.1;
+  letter-spacing: -4px;
+}
+.graphic-design > h1 em {
+  font-family: "Playfair Display", serif;
+  color: var(--hot-pink);
+}
+
+.graphic-intro {
+  max-width: 650px;
+  margin-bottom: 80px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* PROJECT GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 35px;
+  align-items: start;
+}
+
+/* PROJECT CARDS */
+.design-project {
+  min-width: 0;
+  padding: 25px;
+  background: var(--light-blue);
+  border: 2px solid var(--black);
+  box-shadow: 8px 8px 0 var(--pink);
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 310px;
+  object-fit: contain;
+}
+
+.project-content .section-kicker {
+  font-size: 0.65rem;
+  margin-bottom: 15px;
+}
+
+.project-content h2 {
+  margin-bottom: 15px;
+  font: 700 1.35rem "Archivo Black", sans-serif;
+  line-height: 1.3;
+}
+
+.project-content h3 {
+  margin: 25px 0 15px;
+  font: 700 1.5rem "Caveat", cursive;
+}
+
+.project-content p {
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* DESIGN REFLECTION */
+.reflection {
+  margin-top: 25px;
+}
+.reflection summary {
+  display: inline-block;
+  padding: 10px 18px;
+  background: var(--pink);
+  border: 2px solid var(--black);
+  box-shadow: 4px 4px 0 var(--black);
+  font: 700 1.35rem "Caveat", cursive;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  transition: transform 0.3s;
+}
+
+.reflection summary:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.reflection summary span {
+  margin-left: 5px;
+}
+
+.reflection[open] summary {
+  background: rgb(255, 255, 231);
+}
+
+.reflection-content {
+  margin-top: 25px;
+  padding: 18px;
+  background: var(--cream);
+  border-left: 4px solid var(--hot-pink);
+}
+
+.reflection-content p {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.reflection-content p:last-child {
+  margin-bottom: 0;
+}
